@@ -1,0 +1,3 @@
+A license will be picked soon (stay tuned). A super permissive license will
+be picked for this project, since it is just a quick Hello World-style example. 
+(I'm thinking maybe even CC0).
