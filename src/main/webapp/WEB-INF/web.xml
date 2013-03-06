@@ -23,6 +23,12 @@
 	
 	<filter-mapping>
 		<filter-name>StripesFilter</filter-name>
+		<url-pattern>/</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>StripesFilter</filter-name>
 		<servlet-name>StripesDispatcher</servlet-name>
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>ERROR</dispatcher>
@@ -40,7 +46,13 @@
 	</servlet-mapping>
 	
 	<error-page>
+		<error-code>500</error-code>
+		<location>/helloworld.action</location>
+	</error-page>
+	
+	<error-page>
 		<error-code>404</error-code>
 		<location>/helloworld.action</location>
 	</error-page>
+	
 </web-app>
