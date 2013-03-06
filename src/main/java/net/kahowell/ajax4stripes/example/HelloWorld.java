@@ -38,8 +38,17 @@ public class HelloWorld implements ActionBean {
 		return counter;
 	}
 	
-	public Resolution counter() {
+	public Resolution plusOne() {
 		counter++;
+		return counter();
+	}
+	
+	public Resolution minusOne() {
+		counter--;
+		return counter();
+	}
+	
+	public Resolution counter() {
 		return new ForwardResolution("/counter.jsp");
 	}
 
