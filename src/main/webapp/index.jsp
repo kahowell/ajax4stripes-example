@@ -18,6 +18,8 @@
         	<input type="button" onclick="minusOne()" value="-1" />
         	<input type="button" onclick="ajax4stripes.refresh('ajaxCounter')" value="refresh" />
         </stripes:form>
-        <a4s:ajaxArea id="ajaxCounter" beanclass="${actionBean.class.name}" event="counter" name="/counter.jsp" />
+        <a4s:ajaxArea id="ajaxCounter" beanclass="${actionBean.class.name}" event="counter">
+        	<jsp:include page="/counter.jsp" />
+        </a4s:ajaxArea>
     </body>
 </html>
